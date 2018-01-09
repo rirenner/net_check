@@ -51,6 +51,7 @@
         dest: ./generated_report.html
       delegate_to: localhost
       run_once: true
+      ignore_errors: yes
 
     - name: debug outputs
       debug:
