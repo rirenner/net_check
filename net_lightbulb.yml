@@ -52,13 +52,13 @@
       delegate_to: localhost
       run_once: true
 
-    # - name: debug outputs
-    #   debug:
-    #     var: "{{item}}"
-    #   with_items:
-    #     - test1
-    #     - test2
-    #     - test3
-    #     - test4
-    #     - test5
-    #     - test6
+    - name: debug outputs
+      debug:
+        var: "{{item}}"
+      with_items:
+        - test1
+        - test2
+        - test3
+        - test4
+        - test5
+        - test6
